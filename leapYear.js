@@ -2,7 +2,7 @@
 
 const leapYear = function (isLeapYear) {
 
-    if (typeof(isLeapYear) === 'number' && isLeapYear > 0) {
+    if (typeof(isLeapYear) === 'number' || isLeapYear > 0) {
 
 
         if (isLeapYear % 4 === 0 && isLeapYear % 100 === 0 && isLeapYear % 400 === 0) {
@@ -19,4 +19,4 @@ const leapYear = function (isLeapYear) {
 
 };
 
-con
+console.log(leapYear(1900));
