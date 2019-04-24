@@ -12,19 +12,22 @@ const leapYear = function (isLeapYear) {
 
                 return "IT IS A LEAP YEAR";
 
-            } else if (isLeapYear % 4 === 0 && isLeapYear % 100 === 0) {
-                return "IT IS NOT";
-            } else {
-                return "IT IS A LEAP YEAR";
-
             }
+            if (isLeapYear % 4 === 0 && isLeapYear % 100 === 0) {
+                return "IT IS NOT";
+            }
+        }
+        else {
+            return "IT IS NOT";
 
         }
-    else
-        {
-            return "NOT VALID NUMBER";
-        }
+
     }
+    else
+    {
+        return "NOT VALID NUMBER";
+    }
+
 };
 
-console.log(leapYear(2000));
+console.log(leapYear(1997));
